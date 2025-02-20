@@ -13,11 +13,6 @@ public:
                     //it is water body
                     continue;
                 }
-                if(grid[r][c]=='0')
-                {
-                    //it is visited land
-                    continue;
-                }
                 //new unvisited land piece found ,i.e new connectd component
                 cc++;
                 grid[r][c]='1';
