@@ -7,8 +7,8 @@ int cost(vector<vector<int>>& grid,int i,int j,vector<vector<int>> &dp)
     if(i>=r || j>=c) return INT_MAX;
     if(i==r-1 && j==c-1) return grid[i][j];
     if(dp[i][j]!=-1) return dp[i][j];
-    int right=cost(grid,i+1,j,dp);
-    int down=cost(grid,i,j+1,dp);
+    int right=cost(grid,i,j+1,dp);
+    int down=cost(grid,i+1,j,dp);
     dp[i][j]=grid[i][j]+min(right,down);
     return dp[i][j];
 }
