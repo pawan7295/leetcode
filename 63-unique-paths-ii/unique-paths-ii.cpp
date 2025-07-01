@@ -3,10 +3,10 @@ public:
     int uniquePathsWithObstacles(vector<vector<int>>& grid) {
      int r=grid.size();
      int c=grid[0].size();
-     if(grid[r-1][c-1]==1)
-     return 0;
-     if(grid[0][0]==1 )
-     return 0;
+    //  if(grid[r-1][c-1]==1)
+    //  return 0;
+    //  if(grid[0][0]==1 )
+    //  return 0;
      for(int i=0;i<r;i++)
      {
         for(int j=0;j<c;j++)
