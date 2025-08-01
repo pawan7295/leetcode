@@ -20,6 +20,7 @@ void findcombination(int idx,int target,vector<int> &arr,vector<int> ds,vector<v
 
 }
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+        sort(candidates.begin(), candidates.end());
         vector<vector<int>> ans;
         vector<int> ds;
         findcombination(0,target,candidates,ds,ans);
