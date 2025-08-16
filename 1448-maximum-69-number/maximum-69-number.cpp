@@ -11,7 +11,7 @@ public:
         }
         reverse(ans.begin(),ans.end());
         int count=0;
-        
+         int res=0;
         for(int i=0;i<ans.size();i++)
         {
             if(ans[i]==6 && count<1)
@@ -19,12 +19,13 @@ public:
                 ans[i]=9;
                 count++;
             }
+             res=res*10+ans[i];
         }
-        int res=0;
-        for(int i=0;i<ans.size();i++)
-        {
-            res=res*10+ans[i];
-        }
-        return res;
+        // int res=0;
+        // for(int i=0;i<ans.size();i++)
+        // {
+        //     res=res*10+ans[i];
+        // }
+         return res;
     }
 };
