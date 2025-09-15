@@ -31,7 +31,7 @@ void helper(string s,int &count,string brokenletters)
             }
             i++;
         }
-        if (!st.empty()) ans.push_back(st);
+        ans.push_back(st);  //last wla k liye kyuki last work k baad space nhi hota hai toh usko seperately add krna hoga
         int count=0;
         for(int i=0;i<ans.size();i++)
         {
